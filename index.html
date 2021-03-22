@@ -36,13 +36,27 @@
             </p>
             <img id="facebook-networking" src="imgs/networking.png">
         </div>
-        <div class="main-content"> 
-            <div class="right-content">
-                <h1>Abra uma conta</h1>
-                <div class="quick-easy">
-                    É rápido e fácil.
-                </div>
+        <div class="right-content">
+            <h1>Abra uma conta</h1>
+            <div class="quick-easy">
+                É rápido e fácil.
             </div>
+            <form>
+                <input type="text" placeholder="Nome" name="firstname">
+                <input type="text" placeholder="Sobrenome" name="lastname">
+                <input type="text" placeholder="Celular ou email" name="phone_email">
+                <input type="password" placeholder="Nova Senha" name="password">
+                <label id="label-birthdate">Data de nascimento</label>
+                <input type="" placeholder="dd/mm/aaaa" name="birthdate">
+                <label class="label-gender">Gênero</label>
+                <label for="feminino">Feminino</label>
+                <input type="radio" name="gender" id="feminino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="gender" id="masculino">
+                <label for="personalizado">Personalizado</label>
+                <input type="radio" name="gender" id="personalizado">
+                <button type="submit" id="facebook-register">Cadastre-se</button>
+            </form>
         </div>
     </div>
     <script src="script.js"></script>

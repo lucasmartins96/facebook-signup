@@ -30,3 +30,16 @@ function checkInputs(event) {
 
 const submitButton = document.getElementById('facebook-register');
 submitButton.addEventListener('click', checkInputs);
+
+const radios = document.querySelector('.radio');
+const generoInput = document.getElementById('genero');
+radios.addEventListener('click', (event) => {
+  const idTarget = event.target.id;
+  if (idTarget !== 'personalizado') {
+    generoInput.style.display = 'none';
+    generoInput.type = 'hidden';
+  } else {
+    generoInput.style.display = 'block';
+    generoInput.type = 'text';
+  }
+})

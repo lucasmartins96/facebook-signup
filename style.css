@@ -13,7 +13,6 @@
 
 .facebook-login {
   display: flex;
-
 }
 
 .form-group {
@@ -53,4 +52,8 @@
 
 .radio {
   display: flex;
+}
+
+#genero {
+  display: none;
 }

@@ -42,7 +42,7 @@ const submitButton = document.getElementById('facebook-register');
 submitButton.addEventListener('click', checkInputs);
 
 const radios = document.querySelector('.radio');
-const generoInput = document.getElementById('genero');
+const generoInput = document.querySelector('input[name="gender-custom"]');
 radios.addEventListener('click', (event) => {
   const idTarget = event.target.id;
   if (idTarget !== 'personalizado') {

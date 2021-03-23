@@ -18,10 +18,10 @@ function isEmpty(array) {
 
 function checkInputs(event) {
   event.preventDefault();
-  const inputsTexts = document.querySelectorAll('.form-cadastro input[type="text"]');
-  const inputPswd = document.querySelector('.form-cadastro input[type="password"]');
+  const inpTex = document.querySelectorAll('.form-cadastro input[type="text"]');
+  const inpPw = document.querySelector('.form-cadastro input[type="password"]');
   const span = document.querySelector('span');
-  if (isEmpty(inputsTexts) || inputPswd.value === '') {
+  if (isEmpty(inpTex) || inpPw.value === '') {
     span.innerText = 'Campos inválidos';
   } else {
     span.innerText = '';

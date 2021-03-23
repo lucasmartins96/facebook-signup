@@ -28,7 +28,7 @@ function isChecked(array) {
 function resetRightContent() {
   const rightContent = document.querySelector('.right-content');
   while (rightContent.firstChild) {
-    rightContent.removeChild(rightContent .firstChild);
+    rightContent.removeChild(rightContent.firstChild);
   }
 }
 

@@ -54,6 +54,6 @@
   display: flex;
 }
 
-.form-cadastro input[name="gender-custom"] {
+.form-cadastro input[ name = 'gender-custom' ] {
   display: none;
 }

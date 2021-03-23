@@ -42,4 +42,4 @@ radios.addEventListener('click', (event) => {
     generoInput.style.display = 'block';
     generoInput.type = 'text';
   }
-})
+});

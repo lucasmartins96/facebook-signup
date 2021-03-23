@@ -1,12 +1,3 @@
-function addEventButton() {
-  const buttonLogin = document.getElementById('button-login');
-  buttonLogin.addEventListener('click', () => {
-    const inputValue = document.getElementById('user-email-phone').value;
-    alert(inputValue);
-  });
-}
-addEventButton();
-
 // function checkInputs(event) {
 //   event.preventDefault();
 //   const inputsTexts = document.querySelectorAll('.form-cadastro input[type="text"]');

@@ -54,6 +54,7 @@
   display: flex;
 }
 
-input[ name = 'gender-custom' ] {
+#genero-input input {
   display: none;
+  width: 100%;
 }

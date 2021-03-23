@@ -16,12 +16,22 @@ function isEmpty(array) {
   return false;
 }
 
+function isChecked(array) {
+  for (let index = 0; index < array.length; index += 1) {
+    if (array[index].checked === true) {
+      return true;
+    }
+  }
+  return false;
+}
+
 function checkInputs(event) {
   event.preventDefault();
   const inpTex = document.querySelectorAll('.form-cadastro input[type="text"]');
   const inpPw = document.querySelector('.form-cadastro input[type="password"]');
+  const inpRd = document.querySelectorAll('.radio input[type="radio"]')
   const span = document.querySelector('span');
-  if (isEmpty(inpTex) || inpPw.value === '') {
+  if (isEmpty(inpTex) || inpPw.value === '' || !isChecked(inpRd)) {
     span.innerText = 'Campos inválidos';
   } else {
     span.innerText = '';

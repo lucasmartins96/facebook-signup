@@ -7,7 +7,6 @@ function addEventButton() {
 }
 addEventButton();
 
-
 function isEmpty(array) {
   for (let index = 0; index < array.length; index += 1) {
     if (array[index].value === '') {

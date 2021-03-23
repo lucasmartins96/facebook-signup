@@ -20,6 +20,7 @@ function isChecked(array) {
   for (let index = 0; index < array.length; index += 1) {
     if (array[index].checked === true) {
       return true;
+      I
     }
   }
   return false;

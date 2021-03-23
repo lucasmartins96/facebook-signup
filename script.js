@@ -43,7 +43,8 @@ submitButton.addEventListener('click', checkInputs);
 
 const radios = document.querySelector('.radio');
 const generoInput = document.querySelector('input[name="gender-custom"]');
-radios.addEventListener('click', (event) => {
+
+function showGenderInput(event) {
   const idTarget = event.target.id;
   if (idTarget !== 'personalizado') {
     generoInput.style.display = 'none';
@@ -52,4 +53,6 @@ radios.addEventListener('click', (event) => {
     generoInput.style.display = 'block';
     generoInput.type = 'text';
   }
-});
+}
+
+radios.addEventListener('click', showGenderInput);

@@ -41,18 +41,29 @@ function checkInputs(event) {
 const submitButton = document.getElementById('facebook-register');
 submitButton.addEventListener('click', checkInputs);
 
-const radios = document.querySelector('.radio');
-const generoInput = document.querySelector('input[name="gender-custom"]');
+function createGenderInput() {
+  const inputGender = document.createElement('input');
+  const divGeneroInput = document.getElementById('genero-input');
+  inputGender.type = 'text';
+  inputGender.name = 'gender-custom';
+  inputGender.placeholder = 'Gênero (opcional)';
+  divGeneroInput.appendChild(inputGender);
+}
+
+function removeGenderInput() {
+  const divGeneroInput = document.getElementById('genero-input');
+  while (divGeneroInput.firstChild) {
+    divGeneroInput.removeChild(divGeneroInput.firstChild);
+  }
+}
 
 function showGenderInput(event) {
   const idTarget = event.target.id;
   if (idTarget !== 'personalizado') {
-    generoInput.style.display = 'none';
-    generoInput.type = 'hidden';
+    removeGenderInput();
   } else {
-    generoInput.style.display = 'block';
-    generoInput.type = 'text';
+    createGenderInput();
   }
 }
-
+const radios = document.querySelector('.radio');
 radios.addEventListener('click', showGenderInput);

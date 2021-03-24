@@ -1,3 +1,6 @@
+const submitButton = document.getElementById('facebook-register');
+const radios = document.querySelector('.radio');
+
 function addEventButton() {
   const buttonLogin = document.getElementById('button-login');
   buttonLogin.addEventListener('click', () => {
@@ -59,8 +62,6 @@ function checkInputs(event) {
     showUserData();
   }
 }
-
-const submitButton = document.getElementById('facebook-register');
 submitButton.addEventListener('click', checkInputs);
 
 function createGenderInput() {
@@ -87,5 +88,4 @@ function showGenderInput(event) {
     createGenderInput();
   }
 }
-const radios = document.querySelector('.radio');
 radios.addEventListener('click', showGenderInput);

@@ -50,10 +50,10 @@
   flex-direction: column;
 }
 
-.radio {
-  display: flex;
-}
-
 #genero-input input {
   width: 100%;
+}
+
+.radio {
+  display: flex;
 }
